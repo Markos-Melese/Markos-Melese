@@ -1,0 +1,561 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="html">
+<meta name="author" content="Markos Melese">
+<meta name="application-name" content="Markos's portfolio">
+<style>
+*{
+   margin:0px;
+}
+body{
+   
+   height:1000px;
+}
+#divhome{
+   height :100vh;
+   background-image: linear-gradient(cyan,purple);   
+}
+header{
+   display:block;
+}
+nav ul{
+   display: flex;
+   flex-direction:row;
+   justify-content:flex-end;
+   column-gap:2cqi;
+   color:white;
+   font-size:3cqi;
+   background-color:rgb(20, 18, 19);
+   box-shadow:2px 2px 50px purple;
+   position:fixed;
+   width:100%;
+   padding:0cqi;
+   border:0px;
+   height:10cqb;
+   
+}
+header nav ul li{
+   list-style-type:none;
+   padding: 0px 1.5cqi;
+}
+
+header nav ul li a{
+   text-decoration:none;
+   color:white;
+   font-size:1.3cqi;
+   position:relative;
+   right:20px;
+}
+header nav ul li a:hover{
+   color:rgb(37, 61, 61);
+   text-decoration:none;
+}
+
+#h1hello{
+   color:rgb(32, 32, 32);
+   padding-top:20cqi;
+   padding-bottom:5cqi;
+   text-align:center;
+   font-size:3cqi;
+}
+#divgrade{
+   width:100%;
+   display:flex;
+   padding:0px 0cqi;
+  justify-content: center;
+   
+}
+#divgrade{
+   width:100%;
+   text-align:left;
+}
+#h2grade{
+   display:inline-block;
+   flex-direction: row;
+   font-size:2.5cqi;
+   margin:0px;
+   color:white;
+   font-family:monospace;
+   animation:markos 5s infinite steps(30) alternate;
+   overflow:hidden;
+   box-sizing:border-box;
+   width:100%;
+   height:3.5cqi;
+      
+}
+#divhomebtn{
+   width:100%;
+   display:flex;
+   justify-content:center;
+   margin-top:120px;
+}
+#btnhome{
+    align-self:center;
+    text-align:center;
+    width:100px;
+    padding:5px 20px;
+    border-radius:5px;
+    background-color:purple;
+    color:white;
+    border:0px;
+}
+#btnhome:hover{
+    background-color: cyan;
+}
+
+.changebgc{
+   background-color:cyan;
+   box-shadow:2px 2px 20px black;
+   color:black;
+}
+.changebgc li a{
+   color: black;
+}
+.changebgc li a:hover{
+   color:purple;
+   box-shadow:2px 2px 20px purple;
+   border:0px;
+   border-radius:20px;
+}
+#divabout{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   background-image:linear-gradient(black,purple);
+   height:92vh;
+}
+#h1aboutme{
+   text-align:center;
+   font-size:3cqi;
+   padding:7cqi;
+   color:white;
+}
+#insidedivh{
+   height: 100%;
+   display: flex;
+   justify-content:flex-end;
+  
+}
+#imgabout{
+   align-self: center;
+   width: 15cqi;
+   height:25cqi;
+
+}
+#pabout{
+   padding:30px;
+   align-self:flex-end;
+   font-style: normal;
+   font-family: tahoma;
+   font-size:1.2cqi;
+   color:white;
+   width:45%;
+      
+}
+#atg{
+   text-decoration:none;
+   color:cyan;
+   
+}
+#homepb{
+   width:20px;
+   height:20px;
+   position: fixed;
+   top:90cqb;
+   left:85cqi;
+   text-align: center;
+   text-decoration:none;
+   align-items:center;
+   
+}
+#homepb button{
+  
+  width:100%;
+  height:100%;
+  font-size:em;
+  border:0px;
+  position:absolute;
+  background-color: red;
+  color:cyan;
+  border-radius:100px;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  font-style:bold;
+   
+}
+#divservice{
+   height:79vh;
+   overflow:hidden;
+   background-image: linear-gradient(black,teal);
+   display:flex;
+   flex-direction:column;
+   padding:50px;
+   color:white;
+      
+}
+#h1service{
+   justify-self:center;
+   color:white;
+   font-size:3cqi;
+}
+#contdivser{
+   justify-self:center;
+   text-align:left;
+   padding:5cqi;
+   display:flex;
+  flex-direction:column;
+  row-gap:3cqb;
+}
+#divcreative{
+   height:88vh;
+   width:100%;
+   background-image:linear-gradient(black,springgreen);
+   color:rgb(255, 255, 255);
+   display:flex;
+   flex-direction:column;
+   row-gap:20px;
+   justify-content:center;
+   align-items:center;
+}
+#h1creat{
+   font-size:3cqi;
+}
+#divpb{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   width:40%;
+   font-size: 1cqi;
+}
+#pcreativepara{
+  text-align:left;
+}
+#buttonread{
+   background-color:cyan;
+   padding:3px 5px;
+   border-radius:5px;
+   border:none;
+   margin-top:20px;
+   width:80px;
+      
+   
+}
+#buttonread a{
+   color:black;
+   text-decoration:none;
+      
+}
+#buttonread:hover{
+   background-color:springgreen;
+   border:2px solid cyan;
+
+}
+#buttonread a:hover{
+   color:white;
+   background-color:none;
+   
+}
+.indivp{
+   display:flex;
+   justify-content:space-between;
+}
+.meterstatuscreat{
+   width:15cqi;
+   accent-color:cyan; 
+   color: white;
+}
+#divaddress{
+   height:85vh;
+   background-image:linear-gradient(black,aqua);
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   row-gap:40px;
+}
+#h1addconta{
+   color:white;
+   font-size:3cqi;
+}
+#divcontfp{
+   display:flex;
+   flex-direction:row;
+   column-gap:4cqi;
+}
+#divaddp{
+   align-self:flex-end;
+   color:white;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items:center;
+   row-gap:15px;
+   width:40vw;
+   position: relative;
+   bottom:80px;
+
+}
+.inputs{
+   width:50cqi;
+   height:50px;
+
+}
+#formadd{
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+}
+#txtas{
+     width:50cqi;
+     height:200px;
+}
+#btnfad{
+   font-size:2cqi;
+   width:20cqi;
+   height:50px;
+   align-self: flex-start;
+   justify-self:flex-start;
+   margin-top:20px;
+   background-color:black;
+   color:white;
+}
+#btnfad:hover{
+   color: black;
+   background-color:cyan;
+}
+footer{
+   background-color:black;
+   color:white;
+   padding:20px 0px;
+  text-align: center;
+      
+}
+
+footer p span{
+   color:cyan;
+}
+@keyframes markos{
+   to{
+      width:0%;
+      border-right:2px solid cyan;
+   }
+   from{
+      width:100%;
+      border-right:2px solid cyan;
+            
+   }
+}
+
+     /*This is additional features */
+
+#divlogin{
+    position:fixed;
+    top:50cqb;
+    left:36%;
+    display:flex;
+    flex-direction:column;
+    row-gap:1cqb;
+    width:20%;
+    backdrop-filter:blur(100px),contrast(40%);
+    box-shadow:1px 1px 3px black;
+    padding:90px 70px;
+    font-style:bold;
+}
+#divlogin input{
+   background-color:transparent;
+   backdrop-filter:blur(500px) ,contrast(100%);
+   border:2px solid cyan;
+   border-color:cyan;
+}
+#divlogin input::placeholder{
+   color:purple;
+}
+#divlogin button {
+
+    background-color:cyan;
+    color:purple;
+    border:0px;
+}
+div #sp1 svg path:hover{
+    fill:cyan;
+}
+div #sp2 svg path:hover{
+     fill:green;
+}
+div #sp3 svg path:hover{
+    fill:red;
+}
+</style>
+
+<head>
+<title>Markos Melese</title>
+</head>
+<body>
+<header>
+<nav>
+<ul id="ulbgc" class="ulist">
+<li><a href="$">Home</a></li>
+<li><a href="$">About</a></li>
+<li><a href="$">Service</a></li>
+<li><a href="$">Skill</a></li>
+<li><a href="$">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<div id="divhome">
+<div>
+<h1 id="h1hello">Hello , I am Markos Melese</h1>
+</div>
+<div id="divgrade">
+<div id="2divgrade"><h2 id="h2grade">&nbsp;I&nbsp;am&nbsp;Grade11&nbsp;Web&nbsp;Design&nbsp;Student<h2>
+</div>
+
+</div>
+<div id="divhomebtn"><button id="btnhome">Contact</button>
+</div>
+
+
+</div>
+<div id="homepb"><button id="buttup" onClick = " document.getElementById ( 'h1hello' ).scrollIntoView ({ behavior : 'smooth' });">^</button></div>
+<div id="divabout">
+<h1 id="h1aboutme">About Me<h1>
+<div id="insidedivh">
+
+<img src="markos.png" id="imgabout">
+<p id="pabout">Hi, My name is Markos Melese. I'm Grade 11 Natural Science student.Also I am learning Web Design and Development. It's a  CTE subject in Ethiopian Education Curriculum. Coding is so interesting That's why I' Interested in Web Design and Development aubject. And This is My first Large project and portfolio in Coding.I developed different skill in this subject.I can make animation and user Interface .My Telegram address is <a href="t.me/Guy_mark" id="atg">Telegram</a> </p>
+</div>
+</div>
+<div id="divservice">
+ <div><h1 id="h1service">My Services</h1></div>
+ <div id="contdivser">
+ <div><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="black"><path d="M240-120v-80l40-40H160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H680l40 40v80H240Zm-80-200h640v-440H160v440Zm0 0v-440 440Z"/></svg></div>
+  <div>Web Design</div>
+<div>I can make websites using html ,css and JavaScript</div>
+ <div><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#1f1f1f"><path d="M480-80q-33 0-56.5-23.5T400-160v-320q0-33 23.5-56.5T480-560h320q33 0 56.5 23.5T880-480v320q0 33-23.5 56.5T800-80H480Zm0-80h320v-320H480v320Zm-240-80v-400q0-33 23.5-56.5T320-720h400v80H320v400h-80ZM80-400v-400q0-33 23.5-56.5T160-880h400v80H160v400H80Zm400 240v-320 320Z"/></svg></div>
+  <div>Animation</div>
+  <div>I can make a beautifuloving animation using html and css</div>
+
+ <div height="100px" width="100px"><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 0 448 512">
+  <path fill="#3776ab" d="M220.4 0c-114.4 0-107.3 49.5-107.3 49.5l.1 51.3h109.8v15.3H68c-71.5 0-120.5 45-120.5 120.3s46.6 117 114.3 117h40.1v-56.1c0-62.7 51.3-111.4 114.3-111.4h110.1v-110c0-111.4-96.5-126.1-96.5-126.1L220.4 0zm-53.5 31.6c11.3 0 20.4 9.1 20.4 20.4s-9.1 20.4-20.4 20.4-20.4-9.1-20.4-20.4 9.1-20.4 20.4-20.4z"/>
+  <path fill="#ffd43b" d="M227.6 512c114.4 0 107.3-49.5 107.3-49.5l-.1-51.3H225v-15.3h155.1c71.5 0 120.5-45 120.5-120.3s-46.6-117-114.3-117h-40.1v56.1c0 62.7-51.3 111.4-114.3 111.4H121.7v110c0 111.4 96.5 126.1 96.5 126.1l9.4.1zm53.5-31.6c-11.3 0-20.4-9.1-20.4-20.4s9.1-20.4 20.4-20.4 20.4 9.1 20.4 20.4-9.1 20.4-20.4 20.4z"/>
+</svg>
+</div>
+ <div>Python </div>
+<div>I can make simple python programs</div>
+ </div>
+</div>
+<div id="divcreative">
+  <h1 id="h1creat">My Creative Skills</h1>
+ <div id="divpb">
+ <p id="pcreativepara">I can creat a beautiful User Interface wbsite using html, css, and javaS JavaScript like you are looking here. Also I can creat different Interesting animation by using My website education knowledge. Additionaly I can creat a simple Python programs and that is all about my skills. I haven't any more skill.</p>
+ <button id="buttonread"><a href="">Read More</a></button>
+ </div>
+ <div id="status">
+ <div class="creatstatus"><div class="indivp"><p>HTML</p> <p>95%</p></div>
+ <progress max="100" value="95" class="meterstatuscreat">
+ </div>
+
+ <div class="creatstatus"><div class="indivp"><p>CSS</p> <p>50%</p></div>
+ <progress max="100" value="50" class="meterstatuscreat">
+ </div>
+  <div class="creatstatus"><div class="indivp"><p>JavaScript</p> <p>5%</p></div>
+ <progress max="100" value="5" class="meterstatuscreat">
+ </div>
+  <div class="creatstatus"><div class="indivp"><p>PHP</p> <p>2%</p></div>
+ <progress max="100" value="2" class="meterstatuscreat">
+ </div>
+  <div class="creatstatus"><div class="indivp"><p>PYTHON</p> <p>10%</p></div>
+ <progress max="100" value="10" class="meterstatuscreat">
+ </div>
+ 
+ 
+ </div>
+ </div>
+ 
+ <div id="divaddress">
+  <h1 id="h1addconta">Contact ME</h1>
+  <div id="divcontfp">
+  <form id="formadd">
+     <input type="text" placeholder="yourname" class="inputs" id="input1offo1"><br>
+     <input type="email" placeholder="Your email address" class="inputs" id="input2offo1"><br>
+     <input type="text" placeholder="subjects" class="inputs" id="input3offo1"><br>
+     <textarea id="txtas" rows="5" cols="23" placeholder="message"></textarea>
+  
+     <button type="submite" id="btnfad">send message</button>
+    
+  </form>
+  <div id="divaddp">  <p id="addressp">please contact and support me,Just send me your subjects</p>
+  <address>
+     <p>address</p>
+     <p><span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M451.5-531.5Q440-543 440-560t11.5-28.5Q463-600 480-600t28.5 11.5Q520-577 520-560t-11.5 28.5Q497-520 480-520t-28.5-11.5ZM640-520q-17 0-28.5-11.5T600-560q0-17 11.5-28.5T640-600q17 0 28.5 11.5T680-560q0 17-11.5 28.5T640-520Zm160 0q-17 0-28.5-11.5T760-560q0-17 11.5-28.5T800-600q17 0 28.5 11.5T840-560q0 17-11.5 28.5T800-520Zm-2 400q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></span>+251-928-08-88-01</p>
+     <p><span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM445-435q35-35 35-85t-35-85q-35-35-85-35t-85 35q-35 35-35 85t35 85q35 35 85 35t85-35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm149.5-291.5Q320-503 320-520t11.5-28.5Q343-560 360-560t28.5 11.5Q400-537 400-520t-11.5 28.5Q377-480 360-480t-28.5-11.5ZM480-480Z"/></svg></span>melemark39@gmail.com</p>
+     <div id="dicicon">
+     <span id="sp1">
+     <a href="t.me/Guy_mark">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="40px" height="40px">
+  <circle cx="120" cy="120" r="120" fill="white"/>
+  <path fill="black" d="M183.1,67.6L44.2,128.3c-2.1,0.9-2.1,2.1,0.2,2.8l35.6,11.1l82.5-52c3.9-2.4,7.5-1.1,4.5,1.5l-66.9,60.3l-2.6,38.2c3.7,0,5.4-1.7,7.5-3.7l18-17.5l37.4,27.6c6.9,3.8,11.9,1.8,13.6-6.5l24.5-115.5C201.1,64.4,194,59.3,183.1,67.6z"/>
+</svg>
+</a>
+     </span>
+     <span id="sp2">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40px" height="40px">
+  <path fill="black" d="M20 4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H4V6h16v14zm-2-9H6v-2h12v2zm0 4H6v-2h12v2z"/>
+</svg>
+
+     </span>
+     <span id="sp3">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40px" height="40px">
+  <path fill="black" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+</svg>
+
+     </span>
+     </div>
+  </address>
+  </div>
+  </div>
+  
+ </div>
+
+</main>
+<footer>
+<p>&copy; CopyRight <span id="footspan">Markos's Melese Website </span>All right reserved</p>
+</footer>
+<script>
+window.addEventListener('scroll', function () {
+    if(window.scrollY > 400){
+          document.getElementById('ulbgc').classList.add('changebgc');
+      }
+    else{
+         document.getElementById('ulbgc').classList.remove('changebgc');
+      }
+}
+);
+
+let mybutton = document.getElementById("buttup");
+window.onscroll = function()
+{scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop < 300
+    || document.documentElement.scrollTop > 300) { 
+     mybutton.style.display = "none";
+  } 
+  else {
+       mybutton.style.display = "block";
+  }
+};
+
+document.getElementById("buttofo0").onclick = function(){
+   let uname = document.getElementById("input1offo0").value;
+   let  password = document.getElementById("input2offo0").value;
+   window.alert('Hello ${uname} You Entered This site successfuly');
+   document.getElementById("form0").style.display = "none";
+}
+</script>
+
+</body>
+</html>
